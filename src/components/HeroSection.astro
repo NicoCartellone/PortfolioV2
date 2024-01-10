@@ -2,8 +2,10 @@
 import SocialPill from "./SocialPill.astro";
 import LinkedInIcon from "./icons/LinkedIn.astro";
 import GitHubIcon from "./icons/GitHub.astro";
-import Pdf from "./icons/Pdf.astro";
+import PdfIcon from "./icons/Pdf.astro";
 import ButtonCopyClipboard from "./ButtonCopyClipboard.tsx";
+import imgProfile from '../../public/profile.png'
+import CVpdf from '../../public/CV.pdf'
 ---
 
 <section id="home" class="scroll-mt-24">
@@ -15,7 +17,7 @@ import ButtonCopyClipboard from "./ButtonCopyClipboard.tsx";
     >
       <img
         class="object-cover object-center"
-        src="/public/profile.png"
+        src={imgProfile.src}
         alt="profile photo"
       />
     </div>
@@ -41,8 +43,8 @@ import ButtonCopyClipboard from "./ButtonCopyClipboard.tsx";
 
       <nav class="flex gap-4 mt-8 flex-wrap justify-center lg:justify-start">
         <ButtonCopyClipboard client:load/>
-        <SocialPill href="/public/CV.pdf">
-          <Pdf class="size-4 md:size-6" />
+        <SocialPill href={CVpdf}>
+          <PdfIcon class="size-4 md:size-6" />
           Descargar CV
         </SocialPill>
         <SocialPill href="https://www.linkedin.com/in/nicolas-cartellone/">
