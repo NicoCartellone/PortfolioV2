@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ChatBot from "../components/ChatBot";
+import HeroSection from "../components/HeroSection.astro";
+import AboutSection from "../components/AboutSection.astro";
+import ProjectsSection from "../components/ProjectsSection.astro";
+const API_KEY = import.meta.env.PUBLIC_COHERE_API_KEY;
+---
+
+<Layout
+  title="Portfolio Nicolás Cartellone"
+  description="Nicolás Cartellone, desarrollador web & movil"
+>
+  <main>
+    <HeroSection />
+    <AboutSection/>
+    <ProjectsSection/>
+    <ChatBot client:load apiKey={API_KEY} />
+  </main>
+</Layout>

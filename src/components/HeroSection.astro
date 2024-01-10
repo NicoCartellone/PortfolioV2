@@ -1,0 +1,59 @@
+---
+import SocialPill from "./SocialPill.astro";
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import Pdf from "./icons/Pdf.astro";
+import ButtonCopyClipboard from "./ButtonCopyClipboard.tsx";
+---
+
+<section id="home" class="scroll-mt-24">
+  <div
+    class="container mx-auto flex px-36 md:flex-row flex-col items-center justify-center mt-20 lg:mt-0 lg:h-screen"
+  >
+    <div
+      class="lg:max-w-sm lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-[100%]"
+    >
+      <img
+        class="object-cover object-center"
+        src="/public/profile.png"
+        alt="profile photo"
+      />
+    </div>
+    <div
+      class="lg:flex-grow md:w-2/2 md:flex-col flex flex-col md:items-start lg:ml-20 lg:text-start text-center"
+    >
+      <h1
+        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 justify-center"
+      >
+        Hola, soy Nicolás Cartellone
+      </h1>
+      <h2
+        class="text-xl lg:text-2xl text-balance max-w-[700px] min-w-[300px] text-black dark:text-gray-300"
+      >
+        Desarrollador frontend web y movil con <strong
+          class="dark:text-white text-black">+1 año de experiencia</strong
+        >. Mi especialidad es <strong class="dark:text-white text-black"
+          >convertir ideas en productos digitales</strong
+        > impactantes, centrándome en <strong class="dark:text-white text-black"
+          >aportar valor</strong
+        > a cada proyecto.
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap justify-center lg:justify-start">
+        <ButtonCopyClipboard client:load/>
+        <SocialPill href="/public/CV.pdf">
+          <Pdf class="size-4 md:size-6" />
+          Descargar CV
+        </SocialPill>
+        <SocialPill href="https://www.linkedin.com/in/nicolas-cartellone/">
+          <LinkedInIcon class="size-4 md:size-6" />
+          <!-- LinkedIn -->
+        </SocialPill>
+        <SocialPill href="https://github.com/NicoCartellone">
+          <GitHubIcon class="size-4 md:size-6" />
+          <!-- GitHub -->
+        </SocialPill>
+      </nav>
+    </div>
+  </div>
+</section>

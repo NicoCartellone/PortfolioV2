@@ -1,0 +1,212 @@
+---
+import React from "./icons/React.astro";
+import CSS from "./icons/CSS.astro";
+import Expo from "./icons/Expo.astro";
+import Firebase from "./icons/Firebase.astro";
+import Netlify from "./icons/Netlify.astro";
+import Next from "./icons/NextJS.astro";
+import Node from "./icons/Node.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Typescript from "./icons/Typescript.astro";
+import Vercel from "./icons/Vercel.astro";
+import Vite from "./icons/Vite.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import Demo from "./icons/Demo.astro";
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-white text-black",
+    icon: Next,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#003159] text-white",
+    icon: CSS,
+  },
+  EXPO: {
+    name: "Expo",
+    class: "bg-[#fefefe] text-black",
+    icon: Expo,
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#fefefe] text-black",
+    icon: Firebase,
+  },
+  NETLIFY: {
+    name: "Netlify",
+    class: "bg-[#fefefe] text-black",
+    icon: Netlify,
+  },
+  NODEJS: {
+    name: "Node.js",
+    class: "bg-[#00474B] text-white",
+    icon: Node,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-[#003159] text-white",
+    icon: React,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#003159] text-white",
+    icon: Typescript,
+  },
+  VERCEL: {
+    name: "Vercel",
+    class: "bg-white text-black",
+    icon: Vercel,
+  },
+  VITE: {
+    name: "Vite.js",
+    class: "bg-[#003159] text-white",
+    icon: Vite,
+  },
+};
+const PROJECTS = [
+  {
+    title: "Legalverse",
+    description:
+      "MVP para cliente que buscaba una plataforma la cual conecte personas con abogados ofreciendo sus servicios.",
+    link: "https://unique-bunny-bf6568.netlify.app/",
+    github: "https://github.com/NicoCartellone/LegalVerse",
+    image: "/public/projects/legalverse.webp",
+    tags: [TAGS.REACT, TAGS.VITE, TAGS.CSS, TAGS.FIREBASE, TAGS.NETLIFY],
+  },
+  {
+    title: "Conexión Barrial",
+    description:
+      "App barrial para los vecinos puedan alertas situaciones sospechozas o necesidades.",
+    link: "",
+    github: "https://github.com/NicoCartellone/ConexionBarrialApp",
+    image: "/public/projects/conexion-barrial.webp",
+    tags: [TAGS.REACT, TAGS.EXPO, TAGS.FIREBASE],
+  },
+  {
+    title: "Tus Notas",
+    description:
+      "Web app que permite a un usuario crear y almacenar sus notas.",
+    link: "https://mis-notas-app.netlify.app/login",
+    github: "ttps://github.com/NicoCartellone/MisNotas-React-firebase9",
+    image: "/public/projects/tusnotas.webp",
+    tags: [TAGS.REACT, TAGS.VITE, TAGS.TAILWIND, TAGS.FIREBASE, TAGS.NETLIFY],
+  },
+  {
+    title: "Tus Películas",
+    description:
+      "Web donde puedes guardar tus películas favoritas y asi saber que pelicula ver en tu proximo finde.",
+    link: "https://playful-gingersnap-d771c3.netlify.app/",
+    github: "https://github.com/NicoCartellone/PelisApp",
+    image: "/public/projects/tus-peliculas.webp",
+    tags: [TAGS.REACT, TAGS.CSS, TAGS.NETLIFY],
+  },
+  {
+    title: "Devfinder",
+    description:
+      "Busca un perfil de github y mira sus repositorios y sus proyectos.",
+    link: "https://github-search-eta-puce.vercel.app/",
+    github: "https://github.com/NicoCartellone/GithubSearch",
+    image: "/public/projects/devfinder.webp",
+    tags: [TAGS.NEXT, TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.VERCEL],
+  },
+  {
+    title: "Dólar Cotización",
+    description:
+      "Cotizacion del dólar en tiempo real y conversor de pesos Argentinos a dólares, utilizando una api propia.",
+    link: "https://argentina-dolar.netlify.app/",
+    github: "https://github.com/NicoCartellone/Dolar-Frontedmentor",
+    image: "/public/projects/dolarapp.webp",
+    tags: [TAGS.NEXT, TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.NETLIFY],
+  },
+  {
+    title: "Clima App",
+    description:
+      "App movil que te permite ver y guardar el clima de tu ciudad y de otras ciudades del mundo.",
+    link: "",
+    github: "https://github.com/NicoCartellone/AppClima",
+    image: "/public/projects/clima-app.webp",
+    tags: [TAGS.REACT, TAGS.EXPO, TAGS.FIREBASE],
+  },
+  {
+    title: "Dólar App",
+    description:
+      "App donde se puede ver la cotización del dólar en tiempo real utilizando una api propia.",
+    link: "",
+    github: "https://github.com/NicoCartellone/DolarApp",
+    image: "/public/projects/dolar-app.webp",
+    tags: [TAGS.REACT, TAGS.EXPO, TAGS.FIREBASE],
+  },
+  {
+    title: "Api dólar Argentina",
+    description:
+      "Api REST utilizando webScrpping para obtener las cotizaciones de los distintos tipos de dólar en Argentna.",
+    link: "https://api-dolar-argentina-nu.vercel.app/",
+    github: "https://github.com/NicoCartellone/API-DolarArgentina",
+    image: "/public/projects/apirestdolar.webp",
+    tags: [TAGS.NODEJS, TAGS.VERCEL],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ image, title, description, tags, github, link }) => (
+    <article class="p-4 md:w-1/3">
+      <div class="h-full border-2 dark:border-gray-800 border-black/15 rounded-lg overflow-hidden">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img
+            alt={`${image}photo`}
+            class="object-cover object-center h-full w-full"
+            src={image}
+          />
+        </div>
+        <div class="p-6">
+          <h3 class="title-font text-lg font-medium text-black dark:text-white mb-3">
+            {title}
+          </h3>
+          <p class="leading-relaxed mb-3">{description}</p>
+          <ul class="flex gap-x-2 flex-row mb-5 flex-wrap gap-y-2">
+            {tags.map((tag) => (
+              <li>
+                <span
+                  class={`flex gap-x-1 rounded-full text-xs ${tag.class} py-1 px-2 border dark:border-white/10 border-gray-500 font-bold`}
+                >
+                  <tag.icon class="size-4" />
+                  {tag.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <div class="flex items-center flex-wrap justify-between">
+            {link && (
+              <a
+                href={link}
+                class="dark:text-indigo-400 dark:hover:text-white text-indigo-800 hover:text-black inline-flex items-center md:mb-2 lg:mb-0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Demo class="w-6 h-6 mr-2" />
+                Demo
+              </a>
+            )}
+            <a
+              href={github}
+              class="dark:text-indigo-400 dark:hover:text-white text-indigo-800 hover:text-black inline-flex items-center md:mb-2 lg:mb-0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon class="w-6 h-6 mr-2" />
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  ))
+}

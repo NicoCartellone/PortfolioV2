@@ -1,0 +1,41 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import LinkedIn from "./icons/LinkedIn.astro";
+---
+
+<footer class="body-font">
+  <div
+    class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+  >
+    <a
+      class="flex title-font font-medium items-center md:justify-start justify-center"
+      href="#home"
+    >
+      <span class="ml-3 text-xl">NicoCartellone</span>
+    </a>
+    <p
+      class="text-sm text-black dark:text-indigo-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+    >
+      2024 Desarrollado con Astro js
+    </p>
+
+    <span
+      class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+    >
+      <a
+        href="https://www.linkedin.com/in/nicolas-cartellone/"
+        target="_blank"
+        class="ml-3 dark:hover:text-indigo-300 hover:text-[#003159]"
+      >
+        <LinkedIn class="w-5 h-5" />
+        <a
+          href="https://github.com/NicoCartellone"
+          target="_blank"
+          class="ml-3 dark:hover:text-indigo-300 hover:text-[#003159]"
+        >
+          <GitHub class="w-5 h-5" />
+        </a>
+      </a>
+    </span>
+  </div>
+</footer>
