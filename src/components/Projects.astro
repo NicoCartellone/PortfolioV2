@@ -12,6 +12,15 @@ import Vercel from "./icons/Vercel.astro";
 import Vite from "./icons/Vite.astro";
 import GitHubIcon from "./icons/GitHub.astro";
 import Demo from "./icons/Demo.astro";
+import apiRestDolar from '../../public/projects/apirestdolar.webp'
+import climaApp from '../../public/projects/clima-app.webp'
+import conexionBarrial from '../../public/projects/conexion-barrial.webp'
+import devFinder from '../../public/projects/devfinder.webp'
+import dolarApp from '../../public/projects/dolar-app.webp'
+import dolarPrice from '../../public/projects/dolarapp.webp'
+import legalverse from '../../public/projects/legalverse.webp'
+import tusPeliculas from '../../public/projects/tus-peliculas.webp'
+import tusNotas from '../../public/projects/tusnotas.webp'
 
 const TAGS = {
   NEXT: {
@@ -74,64 +83,64 @@ const PROJECTS = [
   {
     title: "Legalverse",
     description:
-      "MVP para cliente que buscaba una plataforma la cual conecte personas con abogados ofreciendo sus servicios.",
+      "MVP para cliente que buscaba una plataforma que conecte personas con abogados, ofreciendo servicios.",
     link: "https://unique-bunny-bf6568.netlify.app/",
     github: "https://github.com/NicoCartellone/LegalVerse",
-    image: "../../public/projects/legalverse.webp",
+    image: `${legalverse.src}`,
     tags: [TAGS.REACT, TAGS.VITE, TAGS.CSS, TAGS.FIREBASE, TAGS.NETLIFY],
   },
   {
     title: "Conexión Barrial",
     description:
-      "App barrial para los vecinos puedan alertas situaciones sospechozas o necesidades.",
+      "App barrial para que los vecinos puedan alertar sobre situaciones sospechosas o necesidades.",
     link: "",
     github: "https://github.com/NicoCartellone/ConexionBarrialApp",
-    image: "../../public/projects/conexion-barrial.webp",
+    image: `${conexionBarrial.src}`,
     tags: [TAGS.REACT, TAGS.EXPO, TAGS.FIREBASE],
   },
   {
     title: "Tus Notas",
     description:
-      "Web app que permite a un usuario crear y almacenar sus notas.",
+      "Web app que permite al usuario crear, editar, eliminar y actualizar sus notas.",
     link: "https://mis-notas-app.netlify.app/login",
     github: "ttps://github.com/NicoCartellone/MisNotas-React-firebase9",
-    image: "../../public/projects/tusnotas.webp",
+    image: `${tusNotas.src}`,
     tags: [TAGS.REACT, TAGS.VITE, TAGS.TAILWIND, TAGS.FIREBASE, TAGS.NETLIFY],
   },
   {
     title: "Tus Películas",
     description:
-      "Web donde puedes guardar tus películas favoritas y asi saber que pelicula ver en tu proximo finde.",
+      "Web donde puedes guardar tus películas favoritas y así saber qué película ver en tu próximo fin de semana.",
     link: "https://playful-gingersnap-d771c3.netlify.app/",
     github: "https://github.com/NicoCartellone/PelisApp",
-    image: "../../public/projects/tus-peliculas.webp",
+    image: `${tusPeliculas.src}`,
     tags: [TAGS.REACT, TAGS.CSS, TAGS.NETLIFY],
   },
   {
     title: "Devfinder",
     description:
-      "Busca un perfil de github y mira sus repositorios y sus proyectos.",
+      "Web app que permite buscar y obtener información sobre el perfil de un usuario en GitHub.",
     link: "https://github-search-eta-puce.vercel.app/",
     github: "https://github.com/NicoCartellone/GithubSearch",
-    image: "../../public/projects/devfinder.webp",
+    image: `${devFinder.src}`,
     tags: [TAGS.NEXT, TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.VERCEL],
   },
   {
     title: "Dólar Cotización",
     description:
-      "Cotizacion del dólar en tiempo real y conversor de pesos Argentinos a dólares, utilizando una api propia.",
+      "Cotización del dólar en tiempo real y conversor de pesos argentinos a dólares, utilizando nuestra propia API.",
     link: "https://argentina-dolar.netlify.app/",
     github: "https://github.com/NicoCartellone/Dolar-Frontedmentor",
-    image: "../../public/projects/dolarapp.webp",
+    image: `${dolarPrice.src}`,
     tags: [TAGS.NEXT, TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.NETLIFY],
   },
   {
     title: "Clima App",
     description:
-      "App movil que te permite ver y guardar el clima de tu ciudad y de otras ciudades del mundo.",
+    "App móvil que te permite visualizar y guardar el pronóstico del clima de tu ciudad y de otras ciudades del mundo.",
     link: "",
     github: "https://github.com/NicoCartellone/AppClima",
-    image: "../../public/projects/clima-app.webp",
+    image: `${climaApp.src}`,
     tags: [TAGS.REACT, TAGS.EXPO, TAGS.FIREBASE],
   },
   {
@@ -140,16 +149,16 @@ const PROJECTS = [
       "App donde se puede ver la cotización del dólar en tiempo real utilizando una api propia.",
     link: "",
     github: "https://github.com/NicoCartellone/DolarApp",
-    image: "../../public/projects/dolar-app.webp",
+    image: `${dolarApp.src}`,
     tags: [TAGS.REACT, TAGS.EXPO, TAGS.FIREBASE],
   },
   {
     title: "Api dólar Argentina",
     description:
-      "Api REST utilizando webScrpping para obtener las cotizaciones de los distintos tipos de dólar en Argentna.",
+    "API REST que utiliza web scraping para obtener las cotizaciones de los distintos tipos de dólar en Argentina.",
     link: "https://api-dolar-argentina-nu.vercel.app/",
     github: "https://github.com/NicoCartellone/API-DolarArgentina",
-    image: "../../public/projects/apirestdolar.webp",
+    image: `${apiRestDolar.src}`,
     tags: [TAGS.NODEJS, TAGS.VERCEL],
   },
 ];
