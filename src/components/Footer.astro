@@ -16,7 +16,6 @@ import LinkedIn from "./icons/LinkedIn.astro";
     <p
       class="text-sm text-black dark:text-indigo-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
     >
-      2024 Desarrollado con Astro js
     </p>
 
     <span
@@ -39,3 +38,11 @@ import LinkedIn from "./icons/LinkedIn.astro";
     </span>
   </div>
 </footer>
+
+<script>
+  const year = new Date().getFullYear();
+  const footerText = document.querySelector("footer p");
+  if (footerText) {
+    footerText.textContent += `${year} Desarrollado con Astro js`;
+  }
+</script>
