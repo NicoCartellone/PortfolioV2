@@ -14,76 +14,107 @@ type Props = {
 
 const ANSWERS = {
   presentacion: (
-    <p>
-      Hola, mi nombre es Nicolás Cartellone. Soy desarrollador frontend web y
-      móvil con más de 1 año de experiencia. Actualmente, me desempeño como
-      freelancer, transformando las ideas de los clientes en productos y
-      aportando mi valor.
-    </p>
+    <div>
+      <p>
+        Hola, mi nombre es <strong>Nicolás Cartellone</strong> 👋. Soy desarrollador <strong>frontend</strong> web y móvil con más de <strong>1 año de experiencia</strong> 💻. Actualmente, me desempeño como freelancer, transformando las ideas de los clientes en productos y aportando mi valor.
+      </p>
+    </div>
   ),
+  
   contacto: (
-    <p>
-      Si quieres ponerte en contacto conmigo, puedes hacerlo a través de mi
-      <a
-        className="underline"
-        href="https://www.linkedin.com/in/nicolas-cartellone/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        LinkedIn
-      </a>
-      <br />
-      o mediante mi correo electrónico <br />
-      <a className="underline" href="mailto:nicolas.cartellone@gmail.com">
-        nicolas.cartellone@gmail.com
-      </a>
-      <br />
-      Ademas te dejo el enlace a mi <br />
-      <a className="underline" href="src/assets/CV.pdf" target="_blank">
-        Curriculum
-      </a>
-    </p>
+    <div>
+      <p>
+        Si deseas ponerte en contacto conmigo, puedes hacerlo a través de mi perfil en LinkedIn:
+      </p>
+      <p>
+        <a
+          className="underline"
+          href="https://www.linkedin.com/in/nicolas-cartellone/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <strong>LinkedIn</strong> 💼
+        </a>
+      </p>
+      <p>
+        O mediante mi correo electrónico:
+      </p>
+      <p>
+        <a className="underline" href="mailto:nicolas.cartellone@gmail.com">
+          <strong>nicolas.cartellone@gmail.com</strong> 📧
+        </a>
+      </p>
+      <p>
+        Además, puedes consultar mi:
+      </p>
+      <p>
+        <a className="underline" href="src/assets/CV.pdf" target="_blank">
+          <strong>Curriculum</strong> 📄
+        </a>
+      </p>
+    </div>
   ),
+  
   tecnologia: (
-    <p>
-      Actualmente, mi conjunto principal de tecnologías incluye React con
-      Vite.js o Next.js para desarrollo web, y React Native con Expo o RN CLI
-      para aplicaciones móviles, utilizando tanto Javascript como Typescript.
-      Utilizo Tailwind CSS para el diseño y Node.js con Express o Firebase para
-      el backend. En cuanto a las bases de datos, además de Firebase, trabajo
-      con SQL Server y MongoDB. Para el control de versiones de los proyectos,
-      empleo Git y Github, mientras que para el despliegue de las aplicaciones
-      Vercel o Netlify para proyectos web y la Google Play Store para
-      aplicaciones móviles.
-    </p>
+    <div>
+      <p>
+        Actualmente, mi conjunto principal de tecnologías incluye:
+      </p>
+      <ul>
+        <li><strong>React</strong> ⚛️ con <strong>Vite.js</strong> o <strong>Next.js</strong> para desarrollo web</li>
+        <li><strong>React Native</strong> 📱 con <strong>Expo</strong> o <strong>RN CLI</strong> para aplicaciones móviles</li>
+        <li><strong>Javascript</strong> y <strong>Typescript</strong> 💬 como lenguajes de programación</li>
+        <li><strong>Tailwind CSS</strong> 🎨 para el diseño</li>
+        <li><strong>Node.js</strong> 🌐 con <strong>Express</strong> o <strong>Firebase</strong> para el backend</li>
+        <li><strong>SQL Server</strong> y <strong>MongoDB</strong> 💾 para bases de datos</li>
+        <li><strong>Git</strong> y <strong>Github</strong> 🛠️ para control de versiones</li>
+        <li><strong>Vercel</strong> o <strong>Netlify</strong> 🚀 para el despliegue de proyectos web</li>
+        <li><strong>Google Play Store</strong> 📲 para aplicaciones móviles</li>
+      </ul>
+    </div>
   ),
+  
   experiencia: (
-    <p>
-      Cuento con más de un año de experiencia trabajando como freelance, tanto
-      en equipos colaborativos como de manera individual, para diversos
-      clientes. Mi enfoque consiste en aportar valor al convertir ideas en
-      productos concretos. He participado en todas las fases de un proyecto,
-      desde la captura de los requisitos iniciales del cliente y el análisis de
-      tecnologías y metodologías a utilizar, hasta el diseño visual UX/UI, y
-      finalmente, el desarrollo y despliegue del producto final.
-    </p>
+    <div>
+      <p>
+        Cuento con más de <strong>un año de experiencia</strong> 🌟 trabajando como freelance, tanto en equipos colaborativos como de manera individual para diversos clientes. Mi enfoque es aportar valor al convertir ideas en productos concretos.
+      </p>
+      <p>
+        He participado en todas las fases de un proyecto, incluyendo:
+      </p>
+      <ul>
+        <li>Captura de los requisitos iniciales del cliente 📋</li>
+        <li>Análisis de tecnologías y metodologías a utilizar 🔍</li>
+        <li>Diseño visual UX/UI 🎨</li>
+        <li>Desarrollo y despliegue del producto final 🚀</li>
+      </ul>
+    </div>
   ),
+  
   formacion: (
-    <p>
-      Actualmente, estoy cursando la tecnicatura en Desarrollo de Aplicaciones
-      Móviles en la Universidad Nacional de La Matanza, con un enfoque en el
-      desarrollo nativo de aplicaciones móviles. Además, completé un curso
-      intensivo de React Native en la agencia Aprendizaje a lo Largo de la Vida
-      en colaboración con IBM. Durante este curso, adquirí los fundamentos de
-      React Native y tuve la oportunidad de trabajar en equipo para crear una
-      aplicación como proyecto final. Asimismo, de manera autodidacta, continúo
-      ampliando y reforzando mis conocimientos en diversas tecnologías,
-      aplicándolas en proyectos personales para seguir creciendo como
-      desarrollador.
-    </p>
+    <div>
+      <p>
+        Actualmente, estoy cursando la <strong>tecnicatura en Desarrollo de Aplicaciones Móviles</strong> 📚 en la Universidad Nacional de La Matanza, con un enfoque en el desarrollo nativo de aplicaciones móviles.
+      </p>
+      <p>
+        Además, completé un <strong>curso intensivo de React Native</strong> 🎓 en la agencia Aprendizaje a lo Largo de la Vida en colaboración con IBM, donde adquirí los fundamentos de React Native y trabajé en equipo para crear una aplicación como proyecto final.
+      </p>
+      <p>
+        De manera autodidacta, continúo ampliando y reforzando mis conocimientos en diversas tecnologías, aplicándolas en proyectos personales para seguir creciendo como desarrollador 🌱.
+      </p>
+    </div>
   ),
-  default: <p>No entendi tu pregunta, podrias reformularla?</p>,
+  
+  default: (
+    <div>
+      <p>
+        No entendí tu pregunta 😕. ¿Podrías reformularla?
+      </p>
+    </div>
+  ),
 };
+
+
 
 const EXAMPLES = [
   { text: "Hola", label: "presentacion" },
